@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OU-Park</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>OU-Park</h1>
+        <div class="map-container">
+            <iframe id="parkingMap"
+                width="700"
+                height="600"
+                frameborder="0" 
+                style="border:0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_NEW_API_KEY&q=University+of+Oklahoma,Oklahoma+United+States&zoom=17"
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="controls">
+            <h2>Select Parking Area:</h2>
+            <select id="parkingLotSelector">
+                <option value="University+of+Oklahoma,Oklahoma+United+States">Main Campus</option>
+                <option value="Sarkeys+Energy+Center+Parking+Lot,Oklahoma+United+States">Sarkeys Parking Lot</option>
+                <option value="Elm+Parking+Garage,Oklahoma+United+States">Elm Parking Garage</option>
+                <option value="Jenkins+Parking+Garage,Oklahoma+United+States">Jenkins Parking Garage</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
