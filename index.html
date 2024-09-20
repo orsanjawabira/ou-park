@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <h1>OU-Park</h1>
+        
         <div class="map-container">
             <iframe id="parkingMap"
                 width="700"
@@ -30,6 +31,26 @@
                 <option value="Jenkins+Parking+Garage,Oklahoma+United+States">Jenkins Parking Garage</option>
                 <option value="Duck+Pond+Parking+Lot,Oklahoma+United+States">Duck Pond Parking Lot</option>
             </select>
+        </div>
+
+        <div class="legend-container">
+            <div class="legend-item">
+                <div class="color-box green"></div>
+                <span>Green for low usage.</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box red"></div>
+                <span>Red for high usage.</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box yellow"></div>
+                <span>Yellow for medium usage.</span>
+            </div>
+        </div>
+
+        <div class="clock-container">
+            <h2>Current Time & Peak Status</h2>
+            <p id="clockDisplay">Loading...</p>
         </div>
     </div>
 
